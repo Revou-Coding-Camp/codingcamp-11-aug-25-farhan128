@@ -3,12 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yayasan Pendidikan Islam Pondok Modern Al-Ghozali</title>
+    <title>Portfolio - Farhan Ahadi</title>
 
-    <link rel="shortcut icon" href="./assets/lambang_al_ghozali.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- External Icon -->
+    <script src="https://kit.fontawesome.com/9dbb2fef00.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+
+    <!-- tailwind -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   </head>
   <body>
-    <p>Hello World</p>
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="container-nav">
+          <img class="nav-icon" src="./assets/logo.png" alt="Icon Navigation" width="100" height="40" />
+
+          <ul class="menu-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#our-profile">Our Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#message-me">Message Me</a></li>
+          </ul>
+
+          <img class="nav-click" src="./assets/./icon/menu.svg" alt="Navigation Menu" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- home -->
+      <section class="home-section" id="home">
+        <div class="container-section">
+          <div class="home-center">
+            <div class="home-center-content">
+              <h2>Hi. <span id="name_home">Farhan Ahadi</span>,</h2>
+              <h1>Selamat Datang</h1>
+              <p>Ini Website portfolio saya, Silakan menjelajahi portfolio saya. saya adalah Pengembang perangkat lunak dan desainer UI/UX. Saya sangat senang dengan teknologi dan komputerisasi, jadi saya tidak akan pernah berhenti belajar hal baru.</p>
+              <div class="btn">
+                <i class="btn-icon fa-brands fa-instagram"></i>
+                <i class="btn-icon fa-brands fa-github"></i>
+                <i class="btn-icon fa-brands fa-linkedin"></i>
+                <i class="btn-icon fa-brands fa-figma"></i>
+              </div>
+            </div>
+
+            <img src="./assets/1739294389436.gif" alt="HEY" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Profile -->
+      <section id="our-profile" class="our-profile">
+        <div class="container-section">
+          <div class="our-profile-content">
+            <h1>Our Profile</h1>
+
+            <div class="our-profile-center">
+              <img src="./assets/profile.png" alt="image" />
+              <div class="our-profile-center-content">
+                <p>Nama saya <span>Moch.Farhan Ahadi</span>, seseorang software developer, UI Designer dan komputerisasi.</p>
+                <p>
+                  Saya lulusan baru S1 Teknik Informatika di Universitas Pamulang dengan pengalaman kerja magang sebagai Junior Android Programming dan sangat ingin bekerja sebagai IT Support. Saya sangat menyukai coding dengan bahasa pemrograman Java dan Kotlin serta senang bermain database MySQL,
+                  selain itu saya juga sangat bersemangat, rajin, jujur, disiplin dan bertanggung jawab dalam bekerja. Saya juga tertarik dengan hal-hal baru yang berhubungan dengan teknologi, sehingga saya tidak akan pernah berhenti untuk mempelajari hal-hal baru
+                </p>
+                <p>Hobbi : coding, berenang, mendengarkan musik</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio" id="portfolio">
+        <div class="container-section">
+          <div class="portfolio-text">
+            <h1>Portfolio</h1>
+          </div>
+          <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img class="img-bg" src="./assets/movie1.jpg" /></div>
+                <div class="card_content">
+                  <h2 class="card_title">Website Movie 1</h2>
+                  <p class="card_text">Website Movie 1 ini menggunakan HTML dan CSS</p>
+                  <button class="button card_btn">Lihat</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="./assets/movie2.jpg" /></div>
+                <div class="card_content">
+                  <h2 class="card_title">Website Movie 2</h2>
+                  <p class="card_text">Website Movie 3 menggunakan HTML dan tailwind Css</p>
+                  <button class="button card_btn">Lihat</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="./assets/todolist.jpg" /></div>
+                <div class="card_content">
+                  <h2 class="card_title">Website To Do List</h2>
+                  <p class="card_text">Website To Do List menggunakan HTML dan Css</p>
+                  <button class="button card_btn">Lihat</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="message-me">
+        <div class="container-message-me">
+          <form id="form-message-me" action="">
+            <h3>Message me</h3>
+            <fieldset>
+              <p>Full Name</p>
+              <input id="full-name" placeholder="Your Full Name" type="text" tabindex="1" required/>
+            </fieldset>
+            <fieldset>
+              <p>Date of Birth</p>
+              <input id="date-birth" placeholder="Your Date of Birth" type="date" tabindex="2" required/>
+            </fieldset>
+            <fieldset>
+              <p>Gander</p>
+              <input type="checkbox" id="laki" name="laki"/>
+              <label for="laki"> Laki - Laki</label><br />
+              <input type="checkbox" id="perempuan" name="perempuan" />
+              <label for="perempuan">Perempuan</label>
+            </fieldset>
+            <fieldset>
+              <p>Email</p>
+              <input id="email" placeholder="Your Email Address" type="email" tabindex="5" required />
+            </fieldset>
+            <fieldset>
+              <p>Message</p>
+              <textarea id="message" placeholder="Type your Message Here...." tabindex="6" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <h2>" Jangan pernah putus asa untuk menggapai impian atau cita-cita. "</h2>
+        <p class="mail">@Copyright by<a href="https://github.com/farhan128">farhan128</a></p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
